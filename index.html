@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classroom Notes Sharing</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+  <header>
+    <h1>📘 Classroom Notes Sharing Platform</h1>
+  </header>
+
+  <!-- CR Login Section -->
+  <section class="login-section" id="loginSection">
+    <h2>Class Representative Login</h2>
+    <input type="password" id="crPassword" placeholder="Enter CR Password" />
+    <button id="loginBtn">Login as CR</button>
+    <p id="loginMessage"></p>
+  </section>
+
+  <main>
+    <!-- Upload Section (Visible only to CR) -->
+    <section class="upload-section" id="uploadSection" style="display: none;">
+      <h2>Upload Notes (CR Only)</h2>
+      <input type="text" id="titleInput" placeholder="Enter note title" />
+      <input type="text" id="subjectInput" placeholder="Enter subject name" />
+      <input type="file" id="fileInput" accept=".pdf,.jpg,.png,.doc,.docx,.txt" />
+      <button id="uploadBtn">Upload Note</button>
+      <button id="logoutBtn" class="logout">Logout CR</button>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+      <h2>Search Notes</h2>
+      <input type="text" id="searchInput" placeholder="Search by title or subject..." />
+    </section>
+
+    <!-- Notes Display -->
+    <section id="notesContainer" class="notes-container"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+P
